@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter3/Scrollview.dart';
+import 'package:flutter3/alert.dart';
 import 'package:flutter3/anime2.dart';
 import 'package:flutter3/animelottie3.dart';
 import 'package:flutter3/bottombar.dart';
@@ -20,6 +21,7 @@ import 'package:flutter3/listviewcustom2.dart';
 import 'package:flutter3/listviewseperated.dart';
 import 'package:flutter3/loadinganime.dart';
 import 'package:flutter3/mediaquery.dart';
+import 'package:flutter3/motiontoast.dart';
 import 'package:flutter3/newanime.dart';
 import 'package:flutter3/sliver.dart';
 import 'package:flutter3/snackbar.dart';
@@ -32,7 +34,9 @@ import 'package:flutter3/textformfield.dart';
 import 'package:flutter3/whatsapp.dart';
 import 'package:flutter3/youtube/Screen.dart';
 import 'package:flutter3/youtube/home.dart';
+import 'package:flutter3/youtube/radiobutton.dart';
 import 'package:flutter3/youtube/screen2.dart';
+import 'package:flutter3/youtube/switchbutton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -65,7 +69,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Homepageee()
+      home: Frenchtoast()
     );
   }
 }

@@ -34,6 +34,7 @@ import 'package:flutter3/mediaquery.dart';
 import 'package:flutter3/motiontoast.dart';
 import 'package:flutter3/motiontoast.dart';
 import 'package:flutter3/newanime.dart';
+import 'package:flutter3/newapi.dart';
 import 'package:flutter3/newtask.dart';
 import 'package:flutter3/playlist.dart';
 import 'package:flutter3/searchbox.dart';
@@ -89,7 +90,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home:Iooo()
+        home:Excuse()
         
         );
   }

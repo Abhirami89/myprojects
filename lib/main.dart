@@ -37,6 +37,7 @@ import 'package:flutter3/newanime.dart';
 import 'package:flutter3/newapi.dart';
 import 'package:flutter3/newtask.dart';
 import 'package:flutter3/playlist.dart';
+import 'package:flutter3/screen1.dart';
 import 'package:flutter3/screen2.dart';
 import 'package:flutter3/searchbox.dart';
 import 'package:flutter3/sharedpref2task2.dart';
@@ -52,6 +53,9 @@ import 'package:flutter3/task2.dart';
 import 'package:flutter3/taskapi.dart';
 import 'package:flutter3/taskk.dart';
 import 'package:flutter3/taskkkcontinue.dart';
+import 'package:flutter3/taskss/screen1.dart';
+import 'package:flutter3/taskss/screen2.dart';
+import 'package:flutter3/taskss/screen3.dart';
 
 import 'package:flutter3/textformfield.dart';
 import 'package:flutter3/timecontroller.dart';
@@ -94,7 +98,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Tskkk()
+        home:Curvess()
 
         
         );

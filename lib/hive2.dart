@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter3/hive.dart';
 
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -29,6 +28,7 @@ class _HiveeState extends State<Hivee> {
     super.initState();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -90,7 +90,7 @@ class _HiveeState extends State<Hivee> {
                 top: 20,
                 left: 20,
                 right: 20,
-                bottom: MediaQuery.of(context).viewInsets.bottom + 130),
+                bottom: MediaQuery.of(context).viewInsets.bottom + 100),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -116,6 +116,11 @@ class _HiveeState extends State<Hivee> {
                             "heading": taskcontroller.text.trim(),
                             "content": contentcontroller.text.trim(),
                           });
+                        } else {
+                          updateTask(itemkey, {
+                            "heading": taskcontroller.text.trim(),
+                            "content": contentcontroller.text.trim(),
+                          });
                         }
                       }
                       taskcontroller.text = "";
@@ -130,22 +135,19 @@ class _HiveeState extends State<Hivee> {
         });
   }
 
-  Future<void> createTask(Map<String, dynamic> task) async {
+  Future<void> createTask(Map<String, dynamic> task2) async {
     await mybox.add(task2);
     load_or_read_task();
-    ScaffoldMessenger.of(context)
-        .showSnackBar(const SnackBar(
-          backgroundColor: Colors.blueAccent,
-          content: Text('task added successfully')));
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        backgroundColor: Colors.blueAccent,
+        content: Text('task added successfully')));
   }
 
   void updateTask(int? itemkey, Map<String, String> uptask) async {
     await mybox.put(itemkey, uptask);
     load_or_read_task();
-    ScaffoldMessenger.of(context)
-        .showSnackBar(const SnackBar(
-          backgroundColor: Colors.amber,
-          content: Text('update successfully')));
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        backgroundColor: Colors.amber, content: Text('update successfully')));
   }
 
   void load_or_read_task() {
@@ -166,6 +168,8 @@ class _HiveeState extends State<Hivee> {
     await mybox.delete(itemkey);
     load_or_read_task();
     ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('task deleted successfully')));
+        const SnackBar(
+          backgroundColor: Colors.orange,
+          content: Text('task deleted successfully')));
   }
 }

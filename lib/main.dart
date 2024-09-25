@@ -56,6 +56,7 @@ import 'package:flutter3/taskkkcontinue.dart';
 import 'package:flutter3/taskss/screen1.dart';
 import 'package:flutter3/taskss/screen2.dart';
 import 'package:flutter3/taskss/screen3.dart';
+import 'package:flutter3/taskss/screen4home.dart';
 
 import 'package:flutter3/textformfield.dart';
 import 'package:flutter3/timecontroller.dart';
@@ -98,7 +99,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home:Curvess()
+        home:Homepages()
 
         
         );

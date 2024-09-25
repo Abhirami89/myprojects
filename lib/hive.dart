@@ -91,7 +91,7 @@ class _Hive_crudState extends State<Hive_crud> {
                 right: 15,
                 bottom: MediaQuery.of(context).viewInsets.bottom + 120),
             child: Column(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisSize: MainAxisSize.max,
               children: [
                 TextField(
                   controller: task_controller,

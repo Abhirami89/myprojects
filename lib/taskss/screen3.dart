@@ -18,7 +18,9 @@ class _screensState extends State<screens> {
         backgroundColor: const Color.fromARGB(248, 230, 177, 3),
         // leading: Icon(Icons.arrow_back_ios),
         title: Text('Back'),
-        leading: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor:const Color.fromARGB(255, 240, 205, 9)),
+        leading: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 240, 205, 9)),
             onPressed: () {
               // Navigator.of(context).pop();
               Navigator.pushReplacement(
@@ -81,7 +83,10 @@ class _screensState extends State<screens> {
                 width: 280,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Curvess()));
+                  },
                   child: Text('Register'),
                 )),
             Padding(

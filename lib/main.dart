@@ -53,6 +53,8 @@ import 'package:flutter3/task2.dart';
 import 'package:flutter3/taskapi.dart';
 import 'package:flutter3/taskk.dart';
 import 'package:flutter3/taskkkcontinue.dart';
+import 'package:flutter3/taskss/appscreen1.dart';
+import 'package:flutter3/taskss/appscreen2.dart';
 import 'package:flutter3/taskss/screen1.dart';
 import 'package:flutter3/taskss/screen2.dart';
 import 'package:flutter3/taskss/screen3.dart';
@@ -99,10 +101,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home:Homepages()
-
-        
-        );
+        home: foodzy());
   }
 }
 
